@@ -82,6 +82,10 @@ h1 {
     margin: 10 auto;
     text-align: center;
     font-size: 60px;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    overflow: auto
 }
 
 #datetime{
@@ -109,7 +113,8 @@ h1 {
 }
 .video-container video {
     display: block;
-    width: 90%;
+    width: auto;
+    max-width: 100%;
     height: auto;
     margin: 0 auto;
 }
@@ -117,7 +122,7 @@ h1 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -50%);
     padding: 10px 20px;
     font-size: 200px;
     text-align: center;
@@ -153,3 +158,9 @@ input[type=submit]:hover{
     color: darkorange;
 }
 
+footer {
+    color: #8cff99;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
