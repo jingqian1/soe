@@ -29,19 +29,24 @@
     <ol>
         <li><a href=" ">NEW ENTRY</a></li>
         <li><a href="https://readymag.website/u3674698848/4618033/2/">EMOTIONS ARCHIVE</a></li>
+    </ol>
+    
+    <div class="datetime">
+        <p id="datetime"></p>
+        <script>
+    // Get current date and time
+        var now = new Date();
+        var datetime = now.toLocaleString();
+    // Insert date and time into HTML
+        document.getElementById("datetime").innerHTML = datetime;
+        </script>
+    </div>
+       
 
     <div class='video-container'>
-        <video src="simplywaves_compress.mp4" controls autoplay loop>Video not supported</video>
+        <video src="simplywaves_compress.mp4" autoplay loop>Video not supported</video>
         
-        <p id="datetime"></p>
-        
-        <script>
-            // Get current date and time
-            var now = new Date();
-            var datetime = now.toLocaleString();
-            // Insert date and time into HTML
-            document.getElementById("datetime").innerHTML = datetime;
-        </script>
+    
 
         <div class='overlay-form'>
             <form action="https://formsubmit.co/f88c17f264bac14d41828faf7b6e6856" 
