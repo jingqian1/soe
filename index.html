@@ -17,10 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-    <style>
-    
-    </style>
-
 
 </head>
 
@@ -32,21 +28,47 @@
     </ol>
     
     <div class="datetime">
-        <p id="datetime"></p>
+     
+       <p id="myId"></p>
         <script>
-    // Get current date and time
-        var now = new Date();
-        var datetime = now.toLocaleString();
-    // Insert date and time into HTML
-        document.getElementById("datetime").innerHTML = datetime;
-        </script>
+        var date = new Date();
+        var dd = date.getDate();
+        var mm = date.getMonth() + 1;
+        var yyyy = date.getFullYear();
+        var newDate = mm + "-" + dd + "-" + yyyy;
+        var p = document.getElementById("myId");
+        p.innerHTML = newDate; 
+        </script>    
+    </div>
+
+    <div class="clock">
+
+        <script>
+        const currentTime = () => {
+            const el = document.querySelector('.clock');
+
+            let date = new Date();
+            let hh = date.getHours();
+            let mm = date.getMinutes();
+            let ss = date.getSeconds();
+
+            hh = hh < 10 ? `0${hh}` : hh;
+            mm = mm < 10 ? `0${mm}` : mm;
+            ss = ss < 10 ? `0${ss}` : ss;
+
+            let time = `${hh}:${mm}:${ss}`;
+
+            el.innerHTML = time;
+        }
+
+    currentTime();
+    setInterval(currentTime, 1000);
+    </script>
     </div>
        
 
     <div class='video-container'>
         <video src="simplywaves_compress.mp4" autoplay playsinline loop>Video not supported</video>
-        
-    
 
         <div class='overlay-form'>
             <form action="https://formsubmit.co/f88c17f264bac14d41828faf7b6e6856" 
@@ -56,17 +78,12 @@
                 <textarea type="text" name="message" style="width:600px; height:600px;" background-color: transparent; placeholder="Input your emotion"></textarea>
                 <br>
                 <input type="submit" value="Submit">
-             
-            </form>
-
-    
+            </form> 
         </div>
-        
-
     </div>
   
-
 </body>
+
 <footer>
     <p>Jing Qian</p>
     <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML 5</a></p>

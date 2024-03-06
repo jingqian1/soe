@@ -89,21 +89,38 @@ h1 {
     
 }
 
-#datetime{
-    color:rgb(255, 164, 52);
+p {
+    color: rgb(255, 182, 73);
     position: relative;
-        top: 50%;
-        left: 2.5%;
-        width: auto;
-        max-width: 100%;
-        height: auto;
-        overflow: auto;
-        font-family: 'Courier New', Courier, monospace;
-        padding: 0px 20px;
-        font-size: 30px;
-        text-align: left;
-
+    top: 45%;
+    left: 2.5%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px 20px;
+    font-size: 30px;
+    text-align: left;
+   
 }
+
+ .clock {
+    color: #ffc926;
+    font-size: 16px;
+    position: relative;
+    top: 40%;
+    left: 2.5%;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px 20px;
+    font-size: 30px;
+    text-align: left;
+}
+
 ol li{
     font: inter;
     font-size: 20px;
