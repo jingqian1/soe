@@ -83,12 +83,15 @@
 /*/ <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900*/
 
-.inter-<uniquifier> {
+
+
+.inter-regular {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 400;
     font-style: normal;
-    font-variation-settings: "slnt" 0;
+    font-variation-settings:
+        "slnt" 0;
 }
 
 body{
@@ -96,16 +99,16 @@ body{
 }
 
 h1 {
-
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
     color: rgb(255, 158, 228);
     margin: 10 auto;
     text-align: center;
-    font-size: 60px;
+    font-size: 80px;
     width: auto;
     max-width: 100%;
     height: auto;
     overflow: auto;
-    font-family: serif;
     letter-spacing: 10px;
 }
 
@@ -230,5 +233,7 @@ footer {
     color: #8cff99;
     padding: 0.5rem;
     text-align: left;
-    font: inter;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
 }
