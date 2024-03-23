@@ -84,7 +84,6 @@
 // <weight>: Use a value from 100 to 900*/
 
 
-
 .inter-regular {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -99,6 +98,7 @@ body{
 }
 
 h1 {
+    position: relative;
     font-family: "Cinzel Decorative", serif;
     font-weight: 400;
     color: rgb(255, 158, 228);
@@ -145,6 +145,7 @@ p {
 }
 
 ol li{
+    position: relative;
     font: inter;
     font-size: 20px;
     width: auto;
@@ -166,13 +167,6 @@ a:active {
     color: rgb(129, 213, 255);
 }
 
-.form{
-    color: rgb(179, 255, 147);
-    overflow: scroll;
-    max-width: 100%;
-    width: 90%;
-    margin: 0 auto;
-}
 
 .video-container {
     position: relative;
@@ -187,6 +181,7 @@ a:active {
     width: 100%;
     height: auto;
 }
+
 .overlay-form {
     position: absolute;
     top: 50%;
@@ -202,8 +197,14 @@ a:active {
    
     border-color: transparent;
     background: transparent;
-
         
+}
+.form {
+    color: rgb(179, 255, 147);
+    overflow: scroll;
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 ::placeholder {
     color: rgb(245, 245, 131);
@@ -233,6 +234,7 @@ input[type=submit]:hover{
 }
 
 footer {
+    position: relative;
     color: #8cff99;
     padding: 0.5rem;
     text-align: left;
