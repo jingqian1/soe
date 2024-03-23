@@ -169,20 +169,23 @@ a:active {
 .form{
     color: rgb(179, 255, 147);
     overflow: scroll;
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .video-container {
     position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     
 }
 .video-container video {
-    display: block;
-    width: auto;
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    margin: 0 auto;
 }
 .overlay-form {
     position: absolute;
@@ -192,8 +195,8 @@ a:active {
     padding: 10px 20px;
     font-size: 200px;
     text-align: center;
-    width: auto;
-    max-width: 90%;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 0 auto;
    
@@ -233,7 +236,7 @@ footer {
     color: #8cff99;
     padding: 0.5rem;
     text-align: left;
-    font-family: "Inter", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 20px;
 }
