@@ -93,6 +93,13 @@
         "slnt" 0;
 }
 
+
+html,
+body {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
 body{
     background-color: black;
 }
@@ -105,7 +112,7 @@ h1 {
     margin: 10 auto;
     text-align: center;
     font-size: 80px;
-    width: auto;
+    width: 100%;
     max-width: 100%;
     height: auto;
     overflow: auto;
@@ -202,8 +209,8 @@ a:active {
 .form {
     color: rgb(179, 255, 147);
     overflow: scroll;
-    max-width: 100%;
-    width: 90%;
+    max-width: 600px;
+    width: 100%;
     margin: 0 auto;
 }
 ::placeholder {
