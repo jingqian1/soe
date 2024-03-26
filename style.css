@@ -116,7 +116,7 @@ header{
     color: rgb(255, 158, 228);
     margin: 10 auto;
     text-align: center;
-    font-size: 74px;
+    font-size: 80px;
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -237,3 +237,61 @@ footer {
     font-weight: 400;
     font-size: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-family: "Cinzel Decorative", serif;
+        font-weight: 400;
+        color: rgb(255, 158, 228);
+        margin: 10 auto;
+        text-align: center;
+        font-size: 60px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        overflow: auto;
+        letter-spacing: 2px;
+    }
+    .video-container {
+            position: relative;
+            width: 70%;
+            max-width: 70%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+    
+        }
+    
+        .video-container video {
+            width: 70%;
+            height: auto;
+        }
+    
+        .overlay-form {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            font-size: 200px;
+            text-align: center;
+            width: 80%;
+            max-width: 80%;
+            height: auto;
+            margin: 0 auto;
+    
+            border-color: transparent;
+            background: transparent;
+    
+        }
+    
+        .form {
+            color: rgb(179, 255, 147);
+            overflow: scroll;
+            max-width: 600px;
+            width: 80%;
+            margin: 0 auto;
+        }
+}
+
+
