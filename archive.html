@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"
+
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet'>
+    <link href='archive.css' rel="archive_stylesheet">
+</head>
+
+<body>
+    <div class='header'>
+        <div class='container'>
+            <h1>Headlines.</h1>
+            <ul>
+                <li><a href='3'>About</a></li>
+                <li><a href='#expertise'>Our Services</a></li>
+                <li><a href='3'>Our Team</a></li>
+                <li><a href='#footer'>Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class='jumbotron'>
+        <div class='container'>
+            <h2>We <span>collect and curate</span>
+                articles, opinions, and images
+                from around the world.</h2>
+        </div>
+    </div>
+    <!-- Draggable DIV -->
+    <div id="drag">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="dragheader">Click here to move</div>
+        <p>Move</p>
+        <p>this</p>
+        <p>DIV</p>
+    </div>
+    <script>
+        //Make the DIV element draggagle:
+        dragElement(document.getElementById("drag"));
+
+        function dragElement(elmnt) {
+            var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+            if (document.getElementById(elmnt.id + "header")) {
+                /* if present, the header is where you move the DIV from:*/
+                document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+            } else {
+                /* otherwise, move the DIV from anywhere inside the DIV:*/
+                elmnt.onmousedown = dragMouseDown;
+            }
+
+            function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // get the mouse cursor position at startup:
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                // call a function whenever the cursor moves:
+                document.onmousemove = elementDrag;
+            }
+
+            function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // calculate the new cursor position:
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                // set the element's new position:
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            function closeDragElement() {
+                /* stop moving when mouse button is released:*/
+                document.onmouseup = null;
+                document.onmousemove = null;
+            }
+        }
+    </script>
+    <div class='banner'>
+        <div class='container'>
+            <h2>The Bottom Line.</h2>
+            <p>We deliver the news that is relevant to you.</p>
+        </div>
+    </div>
+    <div class='container'>
+        <h2 id='expertise'>Our Expertise.</h2>
+        <div class='main'>
+            <div class='spacer'>
+                <div class='cards'>
+                    <div class='col'>
+                        <img src='https://content.codecademy.com/projects/headlines/p1.jpg'>
+                        <img src='https://content.codecademy.com/projects/headlines/p6.jpg'>
+                        <img src='https://content.codecademy.com/projects/headlines/p8.jpg'>
+                    </div>
+                    <div class='col'>
+                        <img src='https://content.codecademy.com/projects/headlines/p2.jpg'>
+                        <img src='https://content.codecademy.com/projects/headlines/p5.jpg'>
+                        <img src='https://content.codecademy.com/projects/headlines/p7.jpg'>
+                    </div>
+                    <div class='col'>
+                        <img src='https://content.codecademy.com/projects/headlines/p3.jpg'>
+                        <img src='https://content.codecademy.com/projects/headlines/p4.jpg'>
+                        <img src='https://content.codecademy.com/projects/headlines/p9.jpg'>
+                        <img src='https://content.codecademy.com/projects/headlines/p10.jpg'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='footer'>
+        <h3>Headlines.</h3>
+        <p>1000 7th Avenue</p>
+        <p>New York, NY</p>
+        <p>(484) 192 - 8372</p>
+    </div>
+</body>
+
+</html>
