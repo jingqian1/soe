@@ -286,7 +286,7 @@ footer {
     align-items: center;
     transform: translate(-50%);
     padding: 10px 20px;
-    font-size: 140px;
+    font-size: 100px;
     width: 70%;
     max-width: 70%;
     height: auto;
@@ -311,7 +311,7 @@ textarea{
     width: calc(100vw - 20px);
         /* calc and viewport to the rescue */
     height: calc(100vh - 20px);
-    resize: none;
+    resize:horizontal;
 }
 
 }
