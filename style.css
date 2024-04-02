@@ -281,7 +281,7 @@ footer {
     .overlay-form {
         position: absolute;
         top: 20%;
-        left: 20%;
+        left: 40%;
         display: inline-block;
         align-items: center;
         transform: translate(-50%);
