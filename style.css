@@ -286,7 +286,6 @@ footer {
         align-items: center;
         transform: translate(-50%);
     /*padding: 10px 20px;*/
-        font-size: 60px;
         width: 70%;
         max-width: 70%;
         height: auto;
@@ -296,7 +295,9 @@ footer {
         background: transparent;
 
     }
-
+    .input[type=text] {
+        font-size: 50%;
+    }
     .form {
         color: rgb(179, 255, 147);
         overflow: scroll;
@@ -311,7 +312,7 @@ footer {
         width: calc(100vw - 20px);
         /* calc and viewport to the rescue */
         height: calc(100vh - 20px);
-        resize:horizontal;
+        resize: none;
     }
 
 }
