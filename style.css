@@ -152,6 +152,7 @@ ol li{
     height: auto;
     overflow: auto;
     text-align: left;
+    color:rgb(34, 255, 255);
 }
 a{
     transition-property: font-size;
@@ -164,7 +165,7 @@ a:hover {
     color: rgb(255, 198, 64);
 }
 a:visited {
-    color: rgb(77, 255, 77);
+    color: rgb(47, 255, 47);
 }
 a:active {
     color: rgb(129, 213, 255);
